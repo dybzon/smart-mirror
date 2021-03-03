@@ -1,0 +1,20 @@
+@lxpanel --profile LXDE-pi
+
+@pcmanfm --desktop --profile LXDE-pi
+
+@xscreensaver -no-splash #disables screensaver
+@point-rpi
+
+#The following lines are added to ensure that the Raspberry Pi runs chromium on localhost when booted
+
+@xset s off
+
+@xset -dpms
+
+@xset s noblank
+
+#@chromium --kiosk --incognito http://localhost
+/usr/bin/chromium --kiosk --ignore-certificate-errors --disable-restore-session-state "http://localhost"
+
+@chromium-browser --incognito --kiosk http://localhost/  # load chromium after boot and point to the localhost webserver in full screen mode
+

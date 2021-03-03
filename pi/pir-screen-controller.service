@@ -1,0 +1,15 @@
+[Unit]
+Description=PIR motion sensor screen controller
+
+[Service]
+WorkingDirectory=/home/pi/scripts
+ExecStart=/usr/bin/python /home/pi/scripts/pir-screen-controller.py
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=pir-screen-controller
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

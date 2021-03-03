@@ -1,0 +1,17 @@
+[Unit]
+Description=sonos node http api
+After=network-online.target
+
+[Service]
+WorkingDirectory=/var/www/node-sonos-http-api
+ExecStart=/usr/bin/node --expose-gc /var/www/node-sonos-http-api/server.js
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=sonos-node-http-api
+User=root
+Group=root
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

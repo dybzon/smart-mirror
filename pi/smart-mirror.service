@@ -1,0 +1,16 @@
+[Unit]
+Description=smart mirror server
+After=network-online.target
+
+[Service]
+WorkingDirectory=/var/www/linux-arm
+ExecStart=/home/pi/dotnet/dotnet exec /var/www/linux-arm/smart-mirror.dll
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=smart-mirror
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
