@@ -1,0 +1,69 @@
+.calendar-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.calendar-event {
+  margin: 8px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.calendar-event-rasmus {
+  color: white;
+}
+
+.calendar-event-family {
+  color: pink;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 8px;
+}
+
+.calendar-day:not(:last-child) {
+  border-right: 2px solid white;
+}
+
+.calendar-day-header {
+  font-weight: 700;
+  margin: 8px;
+  border-bottom: 1px solid white;
+}
+
+.calendar-event-container {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.birthday-container {
+  flex: 0 1 auto;
+}
+
+.regular-event-container {
+  flex: 1 1 auto;
+}
+
+.event-time {
+  padding-right: 8px;
+  margin-right: 8px;
+  border-right: 1px solid white;
+  flex: 0 1 auto;
+  min-width: 64px;
+}
+
+.event-text {
+  flex: 1 1 100%;
+}
+
+.flag-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

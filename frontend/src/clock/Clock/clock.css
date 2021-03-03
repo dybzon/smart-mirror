@@ -1,0 +1,121 @@
+.clock-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.clock {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transition: all 0.05s;
+  /* transition-timing-function: cubic-bezier(
+    0.1,
+    2.6,
+    0.61,
+    1
+  ); Makes the ticker effect more realistic */
+  border-radius: 30%;
+}
+
+.hour-hand {
+  left: 20%;
+  width: 30%;
+}
+
+.second-hand {
+  opacity: 0.5;
+}
+
+.number {
+  font-size: 60px;
+  font-weight: 900;
+  position: absolute;
+  width: calc(50% + 40px); /* account for clock border*/
+  top: 50%;
+  left: -40px; /* account for clock border*/
+  transform-origin: 100%;
+  color: white;
+}
+
+.number-stripe {
+  height: 6px;
+  width: 15%;
+  background-color: white;
+}
+
+.number-zero {
+  transform: rotate(90deg) translateX(-33px);
+}
+.number-one {
+  transform: rotate(120deg) translateX(-18px) translateY(-3px);
+}
+.number-two {
+  transform: rotate(150deg) translateX(-18px) translateY(-3px);
+}
+.number-three {
+  transform: rotate(180deg) translateX(-18px);
+}
+.number-four {
+  transform: rotate(210deg) translateX(-18px) translateY(-3px);
+}
+.number-five {
+  transform: rotate(240deg) translateX(-18px) translateY(-3px);
+}
+.number-six {
+  transform: rotate(270deg) translateX(-18px);
+}
+.number-seven {
+  transform: rotate(300deg) translateX(-18px) translateY(-3px);
+}
+.number-eight {
+  transform: rotate(330deg) translateX(-18px) translateY(-3px);
+}
+.number-nine {
+  transform: translateX(-18px);
+}
+.number-ten {
+  transform: rotate(30deg) translateX(-18px) translateY(-3px);
+}
+.number-eleven {
+  transform: rotate(60deg) translateX(-18px) translateY(-3px);
+}
+
+.rotation-correction-zero {
+  position: absolute;
+  transform: rotate(-90deg) translateX(40px);
+}
+
+.rotation-correction-three {
+  position: absolute;
+  transform: rotate(180deg) translateY(37px);
+}
+
+.rotation-correction-six {
+  position: absolute;
+  transform: rotate(90deg) translateX(-40px);
+}
+
+.rotation-correction-nine {
+  position: absolute;
+  transform: translateY(-43px);
+}

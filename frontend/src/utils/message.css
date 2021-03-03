@@ -1,0 +1,24 @@
+.icon-container {
+  margin-right: 8px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-container-border {
+  margin-right: 16px;
+  border-right: 1px solid white;
+  padding-right: 16px;
+}
+
+.icon-vertical-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.message-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}

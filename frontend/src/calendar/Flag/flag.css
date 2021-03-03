@@ -1,0 +1,22 @@
+.flag {
+  position: relative;
+  background-color: #c60c30;
+  width: 26px;
+  height: 20px;
+}
+
+.v-stripe {
+  background-color: #ffffff;
+  position: absolute;
+  left: 8px;
+  width: 4px;
+  height: 100%;
+}
+
+.h-stripe {
+  background-color: #ffffff;
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  height: 4px;
+}
