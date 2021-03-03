@@ -3,14 +3,14 @@ import { useRepeatingFetch } from '../../utils'
 import { faCloudRain, faSnowflake } from '@fortawesome/free-solid-svg-icons'
 import './weather.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import settings from '../../settings.json'
 
-const apiKey = 'a3b92ac62ad43130848bd3417370e86a'
-const lat = 55.728682427818725
-const lon = 12.511233097212012
+const lat = settings.openWeatherMap.lat
+const lon = settings.openWeatherMap.lon
 
 export const WeatherStatus = () => {
   const { result, error, isLoaded } = useRepeatingFetch(
-    `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=hourly,minutely&appid=${apiKey}`,
+    `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=hourly,minutely&appid=${settings.openWeatherMap.apiKey}`,
     1000 * 60 * 30
   )
 
