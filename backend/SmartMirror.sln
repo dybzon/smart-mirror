@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartMirror", "SmartMirror\SmartMirror.csproj", "{F5E4E4CF-AEFF-4C68-B43D-0D2EE7537C3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMirror.Tests", "SmartMirror.Tests\SmartMirror.Tests.csproj", "{A0028F39-DF0C-48C9-B4E5-FBACF02D1BC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5E4E4CF-AEFF-4C68-B43D-0D2EE7537C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E4E4CF-AEFF-4C68-B43D-0D2EE7537C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E4E4CF-AEFF-4C68-B43D-0D2EE7537C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E4E4CF-AEFF-4C68-B43D-0D2EE7537C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0028F39-DF0C-48C9-B4E5-FBACF02D1BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0028F39-DF0C-48C9-B4E5-FBACF02D1BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0028F39-DF0C-48C9-B4E5-FBACF02D1BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0028F39-DF0C-48C9-B4E5-FBACF02D1BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F94AF000-A6DB-4CED-9A0A-8E8906B3FAA8}
+	EndGlobalSection
+EndGlobal
